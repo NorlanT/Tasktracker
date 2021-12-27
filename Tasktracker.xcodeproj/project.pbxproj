@@ -11,6 +11,11 @@
 		86C950EA277A321000B7499B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C950E9277A321000B7499B /* ContentView.swift */; };
 		86C950EC277A321400B7499B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C950EB277A321400B7499B /* Assets.xcassets */; };
 		86C950EF277A321400B7499B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C950EE277A321400B7499B /* Preview Assets.xcassets */; };
+		86C950F7277A445C00B7499B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86C950F5277A445C00B7499B /* Main.xcdatamodeld */; };
+		86C950F9277A474E00B7499B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C950F8277A474E00B7499B /* DataController.swift */; };
+		86C950FE277A586200B7499B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C950FD277A586200B7499B /* CloudKit.framework */; };
+		86C95100277A61AA00B7499B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C950FF277A61AA00B7499B /* HomeView.swift */; };
+		86C95102277A626800B7499B /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C95101277A626800B7499B /* ProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,13 @@
 		86C950E9277A321000B7499B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86C950EB277A321400B7499B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C950EE277A321400B7499B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86C950F6277A445C00B7499B /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		86C950F8277A474E00B7499B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		86C950FA277A56D900B7499B /* Tasktracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasktracker.entitlements; sourceTree = "<group>"; };
+		86C950FB277A584100B7499B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		86C950FD277A586200B7499B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		86C950FF277A61AA00B7499B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		86C95101277A626800B7499B /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C950FE277A586200B7499B /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +50,7 @@
 			children = (
 				86C950E6277A321000B7499B /* Tasktracker */,
 				86C950E5277A321000B7499B /* Products */,
+				86C950FC277A586200B7499B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +65,14 @@
 		86C950E6277A321000B7499B /* Tasktracker */ = {
 			isa = PBXGroup;
 			children = (
+				86C950FB277A584100B7499B /* Info.plist */,
+				86C950FA277A56D900B7499B /* Tasktracker.entitlements */,
 				86C950E7277A321000B7499B /* TasktrackerApp.swift */,
+				86C950FF277A61AA00B7499B /* HomeView.swift */,
+				86C95101277A626800B7499B /* ProjectView.swift */,
 				86C950E9277A321000B7499B /* ContentView.swift */,
+				86C950F5277A445C00B7499B /* Main.xcdatamodeld */,
+				86C950F8277A474E00B7499B /* DataController.swift */,
 				86C950EB277A321400B7499B /* Assets.xcassets */,
 				86C950ED277A321400B7499B /* Preview Content */,
 			);
@@ -65,6 +85,14 @@
 				86C950EE277A321400B7499B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86C950FC277A586200B7499B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86C950FD277A586200B7499B /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C95102277A626800B7499B /* ProjectView.swift in Sources */,
+				86C950F7277A445C00B7499B /* Main.xcdatamodeld in Sources */,
+				86C950F9277A474E00B7499B /* DataController.swift in Sources */,
 				86C950EA277A321000B7499B /* ContentView.swift in Sources */,
+				86C95100277A61AA00B7499B /* HomeView.swift in Sources */,
 				86C950E8277A321000B7499B /* TasktrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,12 +298,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tasktracker/Tasktracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tasktracker/Preview Content\"";
 				DEVELOPMENT_TEAM = Q2395UCK67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tasktracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,12 +329,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tasktracker/Tasktracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tasktracker/Preview Content\"";
 				DEVELOPMENT_TEAM = Q2395UCK67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tasktracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +377,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86C950F5277A445C00B7499B /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86C950F6277A445C00B7499B /* Main.xcdatamodel */,
+			);
+			currentVersion = 86C950F6277A445C00B7499B /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 86C950DC277A321000B7499B /* Project object */;
 }
